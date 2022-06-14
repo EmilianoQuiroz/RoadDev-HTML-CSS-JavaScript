@@ -1,150 +1,364 @@
-* {
-    margin: 0;
+*{
     box-sizing: border-box;
-  }
-  
-  body {
-    font-family: sans-serif;
-    padding: 90px 20px 0;
-  }
-  
-  .header {
-    background-color: #151617;
-    height: 80px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-  }
-  
-  .nav {
-    display: flex;
-    justify-content: space-between;
-  
-    max-width: 992px;
-    margin: 0 auto;
-  }
-  
-  .nav-link {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .logo {
-    font-size: 30px;
-    font-weight: bold;
-    padding: 0 40px;
-    line-height: 80px;
-  }
-  
-  .nav-menu {
-    display: flex;
-    margin-right: 40px;
-    list-style: none;
-  }
-  
-  .nav-menu-item {
-    font-size: 18px;
-    margin: 0 10px;
-    line-height: 80px;
-    text-transform: uppercase;
-    width: max-content;
-  }
-  
-  .nav-menu-link {
-    padding: 8px 12px;
-    border-radius: 3px;
-  }
-  
-  .nav-menu-link:hover,
-  .nav-menu-link_active {
-    background-color: #4d5860;
-    transition: 0.5s;
-  }
-  
-  /* TOGGLE */
-  .nav-toggle {
-    color: white;
-    background: none;
-    border: none;
-    font-size: 30px;
-    padding: 0 20px;
-    line-height: 60px;
-    cursor: pointer;
-  
-    display: none;
-  }
-
-  /*
-  Imagen de inicio
-  */
-  #contenedor-imagen {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-  }
-
-  #contenedor-imagen img{
-
-    width: 100%;
     
-    padding: 0;
-    margin: 0;
+}
 
-  }
-  
-  /* MOBILE */
-  @media (max-width: 768px) {
-    body {
-      padding-top: 70px;
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+
+body{
+    font-family: 'Roboto',sans-serif;
+    margin: 0;
+}
+/*
+*********** BOTONES ***********
+*/
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,.5);
+    color: #fff;
+    background-color: blueviolet;
+}
+
+button:hover {
+    background-color: rgb(101,33,165,);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{
+    color: blueviolet;
+}
+
+/*
+*********** HEADER ***********
+*/
+header{
+    background-color: rgb(245,245,245);
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 1.6em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: blueviolet;
+}
+/*
+******* IMAGEN PRINCIPAL ********
+*/
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5))
+    ,url(../imagenes/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#hero h1 {
+    color: white;
+}
+
+#hero button {
+    font-size: 1.75em;
+}
+
+#nosotros .container {
+    text-align: center;
+    padding: 200px 12px;
+}
+/*
+*****CARDS ******
+*/
+#nuestros-roadmap{
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+}
+
+#nuestros-roadmap .container{
+    padding: 150px 12px;
+}
+
+#nuestros-roadmap h2 {
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#nuestros-roadmap p{
+    display: none;
+}
+
+
+#nuestros-roadmap .card{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.card:first-child{
+    background-image: linear-gradient(0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5))
+    ,url(../imagenes/intro-programacion.jpg);
+}
+
+
+.card:nth-child(2){
+    background-image: linear-gradient(0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5))
+    ,url(../imagenes/frontend.jpg);
+}
+
+.card:nth-child(3){
+    background-image: linear-gradient(0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5))
+    ,url(../imagenes/backend.jpg);
+}
+
+/*
+************ BENEFICIOS ************
+*/
+#beneficios .container{
+    text-align: center;
+    padding: 250px 12px;
+}
+
+#beneficios li {
+    margin: 12px 0px;
+    font-weight: bold;
+}
+
+#empeza-ya {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 90vh;
+    color: white;
+    background-color: rgb(30,30,30);
+    height: 80vh;
+}
+#empeza-ya h2{
+    font-size: 5vw;
+}
+
+#empeza-ya {
+    font-size: 3vw;
+}
+
+/*
+************ FOOTER ************
+*/
+
+footer {
+    background-color: rgb(230, 230, 230);
+}
+
+footer p {
+    margin: 0;
+    padding: 12px;
+    color: rgb(100,100,100);
+}
+
+footer .container {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/*
+*********** RESPONSIVE ***********
+*/
+@media (min-width: 720px) {
+    header {
+        position: fixed;
+        width: 100%;
     }
-  
-    .header {
-      height: 60px;
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
     }
-  
-    .logo {
-      font-size: 25px;
-      padding: 0 20px;
-      line-height: 60px;
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
     }
-  
-    .nav-menu {
-      flex-direction: column;
-      align-items: center;
-      margin: 0;
-      background-color: #18232e;
-      position: fixed;
-      top: 60px;
-      width: 100%;
-      padding: 20px 0;
-  
-      height: calc(100% - 60px);
-      overflow-y: auto;
-  
-      left: 100%;
-      transition: left 0.3s;
+
+    #hero h1 {
+        font-size: 4em;
     }
-  
-    .nav-menu-item {
-      line-height: 70px;
+
+    #nosotros .container{
+        display: flex;
+        justify-content: space-evenly;
     }
-  
-    .nav-menu-link:hover,
-    .nav-menu-link_active {
-      background: none;
-      color: #5a8aae;
+
+    #nosotros .texto {
+        width: 50%;
+        max-width: 600px;
+        padding-left: 30px;
+        text-align: initial;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
-  
-    .nav-toggle {
-      display: block;
+
+    #nosotros h2{
+        margin-top: 0px;
     }
-  
-    .nav-menu_visible {
-      left: 0;
+
+    #nosotros .img-container{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ),url(../imagenes/nosotros.jpg);
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+
     }
-  
-    .nav-toggle:focus:not(:focus-visible) {
-      outline: none;
+
+    #nuestros-roadmap .programas {
+        display: flex;
+        justify-content:center;
     }
-  }
+
+    #nuestros-roadmap p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #nuestros-roadmap h2 {
+        font-size: 4em;
+    }
+
+    #nuestros-roadmap h3{
+        margin-top: 0;
+        padding-bottom: 50px;
+    }
+
+    #nuestros-roadmap .card{
+        padding: 50px;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgba(50,50,50,0.5);
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+
+    .card:first-child{
+        background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        )
+        ,url(../imagenes/intro-programacion-cropped.jpg);
+    }
+    
+    
+    .card:nth-child(2){
+        background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        )
+        ,url(../imagenes/frontend-cropped.jpg);
+    }
+    
+    .card:nth-child(3){
+        background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        )
+        ,url(../imagenes/backend-cropped.jpg);
+    }
+
+    #beneficios {
+        background-image: url(../imagenes/background.jpg);
+        background-repeat: no-repeat;
+        background-size: 500px 400px;
+        background-position: calc(100vw - 500px) 120px;
+    }
+
+    #beneficios .container {
+        text-align: initial;
+    }
+
+    #beneficios ul {
+        margin-left: 100px;
+    }
+
+    #empeza-ya h2{
+        font-size: 2em;
+    }
+
+    #empeza-ya button{
+        font-size: 1em;
+    }
+
+    footer .container{
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1000px) {
+    #beneficios {
+        background-position-x: calc(100vw - 800px);
+    }
+}

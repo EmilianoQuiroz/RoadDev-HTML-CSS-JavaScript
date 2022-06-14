@@ -5,66 +5,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RoadDev</title>
-    <!-- Estilos CSS -->
+    <!-- CSS -->
     <link rel="stylesheet" href="estilos/estilos.css">
 </head>
 <body>
+    <header>
+        <div class="container">
+            <p class="logo">RoadDev</p>
+            <nav>
+                <a href="#">Roadmaps</a>
+                <a href="#">Bootcamps</a>
+                <a href="#">Nosotros</a>
+                <a href="#">Contacto</a>
+            </nav>
+        </div>
+    </header>
 
-    <!-- Header -->
-    <header class="header">
-        <nav class="nav">
-            <!-- Logo -->
-          <a href="#" class="logo nav-link">RoadDev.</a>
+    <sectio id="hero">
+        <h1>Aprende a programar <br>Busca tu oportunidad</h1>
+        <button>Empezá ya!</button>
+    </sectio>
 
-          <button class="nav-toggle" aria-label="Abrir menú">
-            <i class="fas fa-bars"></i>
-          </button>
+    <section id="nosotros">
+        <div class="container">
 
-          <!-- Menu-->
-          <ul class="nav-menu">
-            <li class="nav-menu-item">
-              <a href="#" class="nav-menu-link nav-link">Bootcamps</a>
-            </li>
-            <li class="nav-menu-item">
-              <a href="#" class="nav-menu-link nav-link">Nosotros</a>
-            </li>
-            <li class="nav-menu-item">
-              <a href="#" class="nav-menu-link nav-link">Blog</a>
-            </li>
-            <li class="nav-menu-item">
-              <a href="#" class="nav-menu-link nav-link nav-menu-link_active">Contacto</a>
-            </li>
-          </ul>
-        </nav>
-        
-      </header>
+            <div class="img-container"></div>
+            <div class="texto">
+                <h2>El mejor camino <span class="color-acento">para todo programador</span></h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam laudantium odit deserunt aut minima, impedit commodi repellendus beatae, perspiciatis saepe voluptatem qui! Harum similique quos possimus! Quaerat nihil assumenda eum.</p>
+            </div>
+        </div>
+    </section>
+        <!--CARDS SECTION (ROADMAPS)--->
+    <section id="nuestros-roadmap">
 
-    <!-- Imagen de presentacion -->
-    <section class="contenedor-imagen">
-        <img src="img/img-bg.jpg" width="100%" alt="">
+        <div class="container">
+
+            <h2>Nuestros roadmaps</h2>
+            <div class="programas"> 
+                    <div class="card">
+                        <h3>Introducion a la programacion</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum corrupti suscipit esse maxime quae ad provident ipsa ab blanditiis, aut repellendus dicta sequi, qui alias sunt, assumenda doloremque reiciendis perferendis?</p>
+                        <button>+ info</button>
+                    </div>
+                    <div class="card">
+                        <h3>Frontend</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum corrupti suscipit esse maxime quae ad provident ipsa ab blanditiis, aut repellendus dicta sequi, qui alias sunt, assumenda doloremque reiciendis perferendis?</p>
+                        <button>+ info</button>
+                    </div>
+                    <div class="card">
+                        <h3>Backend</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum corrupti suscipit esse maxime quae ad provident ipsa ab blanditiis, aut repellendus dicta sequi, qui alias sunt, assumenda doloremque reiciendis perferendis?</p>
+                        <button>+ info</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--CARDS SECTION--->
+
+    <!-- SECCION BENEFICIOS -->   
+    <section id="beneficios">
+        <div class="container">
+            <ul>
+                <li>🚀​ flexibilidad, estudia a tu ritmo</li>
+                <li>🚀​ flexibilidad, estudia a tu ritmo</li>
+                <li>🚀​ flexibilidad, estudia a tu ritmo</li>
+                <li>🚀​ flexibilidad, estudia a tu ritmo</li>
+            </ul>
+        </div>
     </section>
 
-    <!-- Secciones de aprendizaje -->
-    <main>
-
-        <h2>Secciones de aprendizaje</h2>
-
-        <div id="introduction-section"><a href="#"><h2>Introduccion a la programacion</h2></a></div>
-        <div id="dw-section"><a href="#"><h2>Desarrollo web</h2></a></div>
-        <div id="frontend-section"><a href="#"><h2>Frontend</h2></a></div>
-        <div id="backend-section"><a href="#"><h2>Backend</h2></a></div>
-        <div id="mobile-section"><a href="#"><h2>Mobile</h2></a></div>
-        <div id="algorithms-section"><a href="#"><h2>Algoritmos</h2></a></div>
-
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <p><small>Esto es el footer</small></p>
-    </footer>
+    <section id="empeza-ya">
+        <h2>Listo para empezar?</h2>
+        <button>Bootcamp</button>
+    </section>
     
-    <!-- Scripts -->
-    <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
-    <script src="main/main.js"></script>
+    <footer>
+        <div class="container">
+            <p>&copy;Santiago Quiroz</p>
+        </div>
+    </footer>
+
 </body>
-</html>
+</html>                     
